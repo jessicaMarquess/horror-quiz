@@ -52,7 +52,7 @@ export default function Home() {
         <meta property="og:title" content="Horror Movies Quiz" />
         <meta
           property="og:description"
-          content="Quiz sobre Dragon Ball desenvolvido durante a imersão react da aluara."
+          content="Quiz sobre fimes de terror criado durante a 2° Imersão React da Alura"
         />
         <meta property="og:image" content={db.bg} />
 
