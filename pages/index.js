@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Head from "next/head";
 import db from '../db.json';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
@@ -34,18 +35,48 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return(
-    <QuizBackground backgroundImage = {db.bg}>
-    <QuizContainer>
-      <QuizLogo />  
-        <Widget>
-          <Widget.Header>
-            <h1>Horror Movies</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>Teste os seus conhecimentos sobre o universo dos filmes de terror!</p>
-            <Widget.Input placeholder='Digite seu nome :)  ' type='text'/>
-            <Widget.Button>Jogar!</Widget.Button>
-          </Widget.Content>
+    <>
+      <Head>
+        <title>Horror Movies Quiz</title>
+        <meta name="title" content="Horror Movies Quiz" />
+        <meta
+          name="description"
+          content="Teste seus conhecimentos dos maiores ícones dos filmes de terror!"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://vercel.com/jessicamarquess/horror-quiz"
+        />
+        <meta property="og:title" content="Horror Movies Quiz" />
+        <meta
+          property="og:description"
+          content="Quiz sobre Dragon Ball desenvolvido durante a imersão react da aluara."
+        />
+        <meta property="og:image" content={db.bg} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={db.bg} />
+        <meta property="twitter:title" content="Horro Movies Quiz" />
+        <meta
+          property="twitter:description"
+          content="Quiz sobre fimes de terror criado durante a 2° Imersão React da Alura"
+        />
+        <meta property="twitter:image" content={db.bg} />
+      </Head>
+      <QuizBackground backgroundImage = {db.bg}>
+      <QuizContainer>
+        <QuizLogo />  
+          <Widget>
+            <Widget.Header>
+              <h1>Horror Movies</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>Teste os seus conhecimentos sobre o universo dos filmes de terror!</p>
+              <Widget.Input placeholder='Digite seu nome :)  ' type='text'/>
+              <Widget.Button>Jogar!</Widget.Button>
+            </Widget.Content>
           </Widget>
           <Widget>
             <Widget.Content>
@@ -54,8 +85,9 @@ export default function Home() {
             </Widget.Content>
           </Widget>
         <Footer/>
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/jessicaMarquess/horror-quiz"/>
-    </QuizBackground>
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/jessicaMarquess/horror-quiz"/>
+      </QuizBackground>
+    </>
   );
-};
+}
