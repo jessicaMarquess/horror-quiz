@@ -47,4 +47,33 @@ Widget.Content = styled.div`
   }
 `;
 
+Widget.Input = styled.input`
+  font-family: 'Lato', sans-serif;
+  margin-top: 33px;
+  width: 100%;
+  padding: 0.8em;
+  background-color: ${({theme})=> theme.colors.secondary};
+  color: ${({theme})=> theme.colors.outher};
+  font-weight: bold;
+  border: none;
+  border-radius: .2rem;
+`;
+Widget.Button = styled.button`
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  display: inline-block;
+  margin-top: 25px;
+  background-color:${({theme})=> theme.colors.primary};
+  color: ${({theme})=> theme.colors.outher};
+  padding: 0.8em;
+  border: 2px solid ${({theme})=> theme.colors.primary};
+  border-radius: 3px;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-weight: bold;
+`;
+
+
 export default Widget;

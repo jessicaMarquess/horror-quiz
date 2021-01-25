@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import db from '../db.json';
+import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
@@ -34,25 +35,27 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return(
     <QuizBackground backgroundImage = {db.bg}>
-      <QuizContainer>
+    <QuizContainer>
+      <QuizLogo />  
         <Widget>
           <Widget.Header>
             <h1>Horror Movies</h1>
           </Widget.Header>
           <Widget.Content>
             <p>Teste os seus conhecimentos sobre o universo dos filmes de terror!</p>
-            <input type="text" placeholder='Digite seu nome aqui'/>
+            <Widget.Input placeholder='Digite seu nome :)  ' type='text'/>
+            <Widget.Button>Jogar!</Widget.Button>
           </Widget.Content>
           </Widget>
           <Widget>
             <Widget.Content>
               <h2>Quizes do pessoal</h2>
-              <p>🛠⛏Em Construção⚒🔧</p>
+              <p>🛠⛏Em Construção🔧🛠</p>
             </Widget.Content>
           </Widget>
         <Footer/>
       </QuizContainer>
-      <GitHubCorner projectUrl="#"/>
+      <GitHubCorner projectUrl="https://github.com/jessicaMarquess/horror-quiz"/>
     </QuizBackground>
   );
 };
