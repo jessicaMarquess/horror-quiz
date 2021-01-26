@@ -27,7 +27,7 @@ function Logo({ className }) {
       </defs>
     </svg>
   );
-}
+};
 
 Logo.propTypes = {
   className: PropTypes.string.isRequired,
@@ -37,7 +37,7 @@ const QuizLogo = styled(Logo)`
   margin: auto;
   display: block;
   @media screen and (max-width: 500px) {
-    margin-left: 200px;
+    margin: 0;
   }
 `;
 
