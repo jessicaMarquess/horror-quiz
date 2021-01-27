@@ -70,11 +70,14 @@ export default function Home() {
                   placeholder="Digite seu nome :)"
                   type="text"
                 />
-                <Widget.Button type="submit" disabled={name.length === 0}>
-                  Partiu
+                <p>
+                  Está pronto para entrar nos seus piores pesadelos,
                   {' '}
                   {name}
                   ?
+                </p>
+                <Widget.Button type="submit" disabled={name.length === 0}>
+                  Estou sim!
                 </Widget.Button>
               </form>
             </Widget.Content>
