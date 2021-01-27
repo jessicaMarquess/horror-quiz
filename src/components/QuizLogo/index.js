@@ -27,7 +27,7 @@ function Logo({ className }) {
       </defs>
     </svg>
   );
-};
+}
 
 Logo.propTypes = {
   className: PropTypes.string.isRequired,
