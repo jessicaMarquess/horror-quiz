@@ -21,31 +21,32 @@ export default function Quiz() {
 
   return (
     <>
-    <Head>
-      <title>{db.title}</title>
-    </Head>
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <QuizLogo />
-        <Widget>
-          <Widget.Header>
-            <h1>{db.title}</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>
-              Um instante,
-              {' '}
-              {name}
-              !
-              Freddy Krueger ainda está atormendando alguém nos sonhos, quando ele estiver
-              aqui voltaremos.
-            </p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/jessicaMarquess/horror-quiz" />
-    </QuizBackground>
+      <Head>
+        <title>{db.title}</title>
+      </Head>
+
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <QuizLogo />
+          <Widget>
+            <Widget.Header>
+              <h1>{db.title}</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>
+                Um instante,
+                {' '}
+                {name}
+                !
+                Freddy Krueger ainda está atormendando alguém nos sonhos, quando ele estiver
+                aqui voltaremos.
+              </p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/jessicaMarquess/horror-quiz" />
+      </QuizBackground>
     </>
   );
 }
