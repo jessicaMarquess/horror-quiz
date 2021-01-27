@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import Head from 'next/head';
 import db from '../db.json';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
@@ -19,6 +20,10 @@ export default function Quiz() {
   }, []);
 
   return (
+    <>
+    <Head>
+      <title>{db.title}</title>
+    </Head>
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
@@ -41,5 +46,6 @@ export default function Quiz() {
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/jessicaMarquess/horror-quiz" />
     </QuizBackground>
+    </>
   );
 }

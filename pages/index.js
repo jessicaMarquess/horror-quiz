@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Horror Movies Quiz</title>
+        <title>{db.title}</title>
 
         <meta name="title" content="Horror Movies Quiz" />
         <meta
