@@ -4,25 +4,63 @@
     "description": "Teste seus conhecimentos sobre os ícones dos filmes de terror.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://wallpapercave.com/wp/wp2731269.jpg",
+        "title": "De qual franquia esse lindão é?",
+        "description": "Conselho 1: Não entre em casas abandonadas a noite.",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Scream",
+          "The Conjuring",
+          "A Nightmare on Elm Street",
+          "Friday the 13th"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://www.ricardoorlandini.net/uploads/image/image/Hoje%20na%20Hist%c3%b3ria/univ_psycho_frame_a%5b1%5d.jpg",
+        "title": "Quem era o dono dessa casa?",
+        "description": "Conselho 2: Nunca entre em sotões ou porões de casas assombradas.",
+        "answer": 1,
+        "alternatives": [
+           "Jason Voorhees",
+           "Norman Bates",
+           "Annabelle",
+           "Frederick Clegg"
+        ]
+      },
+      {
+        "image": "https://www.joblo.com/assets/images/joblo/news/2018/10/Halloween-h20-still-loves-913.jpg",
+        "title": "Quem é a atriz conhecida como Scream Queen?",
+        "description": "Conselho 3: Não vá ver o que tem por trás dos barulhos estranhos, sempre acontece algo.",
+        "answer": 1,
+        "alternatives": [
+           "Scarlett Johansson",
+           "James Lee Curtis",
+           "Vera Farmiga",
+           "Isabelle Fuhrman"
+        ]
+      },
+      {
+        "image": "https://www.syracuse.com/resizer/ukolndb3U56bjdkR6JlVOEVveaQ=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/EEV5UZG3KJDP3NMLX3UAR4R6MM.jpg",
+        "title": "Qual foi ano em que Scream foi lançado?",
+        "description": "Conselho 4: Tranque todas as fechaduras quando for dormir.",
+        "answer": 2,
+        "alternatives": [
+           "2000",
+           "1989",
+           "1996",
+           "2021"
+        ]
+      },
+      {
+        "image": "https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/jason-voorhees-friday-the-13th_1.jpg",
+        "title": "Quem era o(a) assassino(a) no primeiro filme da franquia Friday the 13th?",
+        "description": "Conselho 5: Não se separe do seu grupo quando tiver um assassino atrás de vocês.",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Jason Voorhees",
+           "Sra. Voorhees",
+           "Emily Rose",
+           "Shelly"
         ]
       }
     ],

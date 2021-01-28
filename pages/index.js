@@ -3,12 +3,15 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
+import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizContainer from '../src/components/QuizContainer';
 import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+
 
 export default function Home() {
   const router = useRouter();
@@ -48,6 +51,7 @@ export default function Home() {
         />
         <meta property="twitter:image" content={db.bg} />
       </Head>
+
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <QuizLogo />
@@ -62,23 +66,23 @@ export default function Home() {
               }}
               >
                 <p>Teste os seus conhecimentos sobre o universo dos filmes de terror!</p>
-                <Widget.Input
+                <Input
+                  name="userName"
                   onChange={(event) => {
-                    // name = event.target.value;
                     setName(event.target.value);
                   }}
-                  placeholder="Digite seu nome :)"
-                  type="text"
+                  placeholder="Pra começar, escreva seu nome aqui :)"
+                  value={name}
                 />
                 <p>
-                  Está pronto para entrar nos seus piores pesadelos,
+                  Podemos entrar nos seus piores pesadelos,
                   {' '}
                   {name}
                   ?
                 </p>
-                <Widget.Button type="submit" disabled={name.length === 0}>
+                <Button type="submit" disabled={name.length === 0}>
                   Estou sim!
-                </Widget.Button>
+                </Button>
               </form>
             </Widget.Content>
           </Widget>

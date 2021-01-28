@@ -46,36 +46,21 @@ Widget.Content = styled.div`
   }
 `;
 
-Widget.Input = styled.input`
-  font-family: 'Lato', sans-serif;
-  width: 100%;
-  padding: 0.8em;
-  background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.outher};
-  font-weight: bold;
-  border: none;
-  border-radius: .2rem;
-`;
-Widget.Button = styled.button`
-  font-family: 'Lato', sans-serif;
-  width: 100%;
-  display: inline-block;
-  margin-top: 25px;
-  background-color:${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.outher};
-  padding: 0.8em;
-  border: none;
-  border-radius: 3px;
-  display: block;
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
   cursor: pointer;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  font-weight: bold;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
   
-  &:disabled {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    cursor: not-allowed;
-    opacity: 0.8;
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 
