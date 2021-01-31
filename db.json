@@ -30,12 +30,12 @@
       {
         "image": "https://www.joblo.com/assets/images/joblo/news/2018/10/Halloween-h20-still-loves-913.jpg",
         "title": "Quem é a atriz conhecida como Scream Queen?",
-        "description": "Conselho 3: Não vá ver o que tem por trás dos barulhos estranhos, sempre acontece algo.",
-        "answer": 1,
+        "description": "Conselho 3: Não seja curioso a ponto de ir atrás de barulhos macabros, vai acabar morrendo.",
+        "answer": 2,
         "alternatives": [
            "Scarlett Johansson",
-           "James Lee Curtis",
            "Vera Farmiga",
+           "James Lee Curtis",
            "Isabelle Fuhrman"
         ]
       },
@@ -43,11 +43,11 @@
         "image": "https://www.syracuse.com/resizer/ukolndb3U56bjdkR6JlVOEVveaQ=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/EEV5UZG3KJDP3NMLX3UAR4R6MM.jpg",
         "title": "Qual foi ano em que Scream foi lançado?",
         "description": "Conselho 4: Tranque todas as fechaduras quando for dormir.",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
            "2000",
-           "1989",
            "1996",
+           "1989",
            "2021"
         ]
       },
@@ -55,12 +55,12 @@
         "image": "https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/jason-voorhees-friday-the-13th_1.jpg",
         "title": "Quem era o(a) assassino(a) no primeiro filme da franquia Friday the 13th?",
         "description": "Conselho 5: Não se separe do seu grupo quando tiver um assassino atrás de vocês.",
-        "answer": 0,
+        "answer": 3,
         "alternatives": [
            "Jason Voorhees",
-           "Sra. Voorhees",
            "Emily Rose",
-           "Shelly"
+           "Shelly",
+           "Sra. Voorhees"
         ]
       }
     ],
@@ -74,8 +74,8 @@
         "outher": "#d3d3d3",
         "mainBg": "#0B090A",
         "contrastText": "#B1A7A6",
-        "wrong": "#E5383B",
-        "success": "#588157"
+        "wrong": "#F64740",
+        "success": "#2a9d8f"
       },
       "borderRadius": "4px"
     }
